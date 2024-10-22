@@ -1,120 +1,71 @@
 # Site
-repository: sproogen/resume-theme
+repository: ocollp/ocollp.github.io
 favicon: images/favicon.ico
 
 # Content configuration version
 version: 2
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: Olga Coll
+title: Engineering Lead and Backend Developer
+email: olgacollperez@gmail.com
+# website: www.github.com/ocollp/test
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-instagram_username: jameswgrant
-linkedin_username: jameswgrant
-# xing_username: jekyll
-# pinterest_username: jekyll
-youtube_username: globalmtb
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
-
-# Additional icon links
-additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
-  url: https://www.itsgoingto.be
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
+twitter_username: ocollp
+github_username:  ocollp
+linkedin_username: ocollp
 
 # About Section
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
-
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
-
+  Experienced Engineering Lead with a track record of managing and mentoring high-performing teams to deliver technical solutions aligned with architectural standards. Skilled in balancing feature delivery and technical debt, I excel in creating personalized growth plans for teams members and ensuring stakeholder needs are met. Known for effectively measuring progress and communicating to drive team success, with an extensive background in infrastructure, CI/CD, and QA processes. Demonstrated a strong track record in designing and implementing automated pipelines, optimizing deployment workflows, and enforcing rigorous quality assurance practices to ensure high reliability and performance.
+  
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
-
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Experience
+    layout: list 
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
-        quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-        description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
-
-  - title: Education # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
+        title: wefox
+        link: wefox.com
+        link_text: wefox.com
+        sub_title: Engineering Lead
+        caption: Sep 2022 - Present
+        description: |
+          I am responsible for overseeing both the management of the individuals within my squad, as well as the technical delivery of our goals. This includes ensuring that my team has the resources they need to be successful, while also making certain that we are delivering high-quality solutions that meet our stakeholders' needs.
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-        description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+        title: wefox
+        link: wefox.com
+        link_text: wefox.com
+        sub_title: Java Developer
+        caption: Nov 2018 - Sep 2022
+        description: |
+          I was responsible for writing high-quality and efficient code that adhered to best practices. I took pride in ensuring that my code was well-organized, readable, and maintainable, and I always made sure to apply rigorous testing to ensure its functionality.
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
-
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
-
+          Whether I was working on new features, fixing bugs or optimizing existing systems, I was always focused on delivering the best possible results, working closely with other team members to achieve our goals. I was dedicated to delivering high-quality software that met the needs of our customers and exceeded their expectations.
+      - layout: left
+        title: NTT Data
+        link: nttdata.com
+        link_text: nttdata.com
+        sub_title: Junior Java Developer
+        caption: Jul 2017 - Nov 2018
+        description: |
+          As a junior backend developer, my main responsibilities were to develop new features, resolve bugs and improve the code. I was encouraged to maintain a high level of code quality and worked closely with my team to understand the full scope of the project.
+      - layout: left
+        title: DEIdeas Marketing Solutions
+        link: deideasmarketing.com
+        link_text: deideasmarketing.com
+        sub_title: Junior Software Developer
+        caption: Jan 2017 - Jul 2017
+        description: |  
+          During my internship, I had the opportunity to work on developing hybrid mobile applications using the Ionic Framework and native Android. With the guidance of my mentor, I was able to gain valuable hands-on experience and contribute to the development of applications for two different projects.
+  
 # Footer
-footer_show_references: true
-# references_title: References on request (Override references text)
+footer_show_references: false
 
 # Build settings
 remote_theme: sproogen/resume-theme
@@ -122,6 +73,3 @@ remote_theme: sproogen/resume-theme
 sass:
   sass_dir: _sass
   style: compressed
-
-plugins:
- - jekyll-seo-tag
