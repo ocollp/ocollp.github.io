@@ -3,7 +3,7 @@ body {
     background-color: #1a1a2e;
     color: #e0e0e0;
     margin: 0;
-    padding: 20px 20px; 
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -11,14 +11,14 @@ body {
 }
 
 .fixed-title {
-    font-size: 2em; 
+    font-size: 2em;
     font-weight: bold;
     color: #50fa7b;
-    margin: 0 0 10px 0; 
+    margin: 0 0 10px 0;
 }
 
 .typing-effect {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #fff;
     border-right: 2px solid #50fa7b;
     white-space: nowrap;
@@ -46,13 +46,13 @@ body {
 }
 
 .section h2 {
-    font-size: 1.1em; 
+    font-size: 1em;
     color: #50fa7b;
     margin-bottom: 8px;
 }
 
 .section p, .section ul {
-    font-size: 1em; 
+    font-size: 0.95em;
     line-height: 1.4;
     margin: 0;
     padding: 0;
@@ -76,4 +76,34 @@ body {
 .job-title a:hover, .section a:hover {
     color: #fff;
     border-bottom: 1px solid #50fa7b;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a[href^="mailto:"] {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a[href^="mailto:"]:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #50fa7b;
+}
+
+@media (max-width: 768px) {
+    body { padding: 15px; }
+    .fixed-title { font-size: 5vw; }
+    .typing-effect { font-size: 3.5vw; }
+    .section h2 { font-size: 0.9em; }
+    .section p, .section ul li { font-size: 0.85em; }
+}
+
+@media (max-width: 480px) {
+    .fixed-title { font-size: 6vw; }
+    .typing-effect { font-size: 3vw; }
+    .section h2 { font-size: 0.85em; }
+    .section p, .section ul li { font-size: 0.8em; }
 }
