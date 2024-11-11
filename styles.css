@@ -3,7 +3,7 @@ body {
     background-color: #1a1a2e;
     color: #e0e0e0;
     margin: 0;
-    padding: 30px 60px;
+    padding: 20px 20px; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -11,26 +11,24 @@ body {
 }
 
 .fixed-title {
-    font-size: 4.5vw;
+    font-size: 2em; 
     font-weight: bold;
     color: #50fa7b;
-    margin: 0 60px; /* Aplica el mismo margen que al resto del contenido */
+    margin: 0 0 10px 0; 
 }
 
 .typing-effect {
-    font-size: 2.8vw;  /* Este tamaño depende del ancho de la ventana */
+    font-size: 1.2em;
     color: #fff;
     border-right: 2px solid #50fa7b;
-    white-space: nowrap;  /* El texto se mantendrá en una sola línea */
-    overflow: hidden;  /* El contenido que se desborda no se muestra */
+    white-space: nowrap;
+    overflow: hidden;
     display: inline-block;
     margin-top: 10px;
-    margin-left: 60px;  /* Aplica el mismo margen que al resto del contenido */
-    margin-right: 60px;  /* Asegura que el margen derecho sea consistente */
+    width: auto;
+    max-width: calc(100% - 40px);
+    word-wrap: break-word;
     animation: typing 5s steps(38, end) 1 forwards, blink 0.7s step-end infinite;
-    width: auto;  /* Deja que el texto ocupe solo el ancho necesario */
-    max-width: calc(100% - 120px);  /* Permite que el texto ocupe todo el espacio disponible menos los márgenes */
-    word-wrap: break-word;  /* Permite que las palabras largas se dividan si no caben en la línea */
 }
 
 @keyframes typing {
@@ -39,24 +37,22 @@ body {
 }
 
 @keyframes blink {
-    from, to { border-color: transparent; }
+    0%, 100% { border-color: transparent; }
     50% { border-color: #50fa7b; }
 }
 
 .section {
     margin-top: 20px;
-    margin-left: 60px;  /* Aplica el mismo margen a las secciones */
-    margin-right: 60px;
 }
 
 .section h2 {
-    font-size: 1em;
+    font-size: 1.1em; 
     color: #50fa7b;
     margin-bottom: 8px;
 }
 
 .section p, .section ul {
-    font-size: 1.1em;  /* Aumenta el tamaño de la fuente de los párrafos */
+    font-size: 1em; 
     line-height: 1.4;
     margin: 0;
     padding: 0;
@@ -71,7 +67,6 @@ body {
     margin-bottom: 6px;
 }
 
-/* Link styling */
 .job-title a, .section a {
     color: #c1ebcc;
     text-decoration: none;
@@ -81,39 +76,4 @@ body {
 .job-title a:hover, .section a:hover {
     color: #fff;
     border-bottom: 1px solid #50fa7b;
-}
-
-/* Prevent visited links from changing color */
-a:visited {
-    color: #ffffff;
-}
-
-a[href^="mailto:"] {
-    color: #ffffff; /* Blanco */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a[href^="mailto:"]:hover {
-    color: #ffffff; 
-    border-bottom: 1px solid #50fa7b; 
-}
-
-@media (max-width: 768px) {
-    body { padding: 20px 30px; }
-    .fixed-title { font-size: 7vw; }
-    .typing-effect { 
-        font-size: 3vw;  /* Reducción de tamaño de la fuente en pantallas medianas */
-    }
-    .section h2 { font-size: 0.9em; }
-    .section p, .section ul li { font-size: 1em; } /* Aumentar el tamaño de la fuente de los párrafos */
-}
-
-@media (max-width: 480px) {
-    .fixed-title { font-size: 9vw; }
-    .typing-effect { 
-        font-size: 2rem;  /* Fijamos un tamaño de fuente fijo para pantallas muy pequeñas */
-    }
-    .section h2 { font-size: 0.8em; }
-    .section p, .section ul li { font-size: 1.1em; } /* Aumentar aún más el tamaño de los párrafos */
 }
